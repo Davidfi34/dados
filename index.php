@@ -6,7 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanzar dados</title>
 </head>
-<body>
-    <!-- Generar dos numeros aleatorios simulando ser dados en PHP y HTML -->
+<body style="text-align: center;">
+    <h1> Presiona el botón y lanza los dados </h1>
+
+    <!--    ////////////PHP//////////             -->
+    <?php
+    
+      $n1 = rand(1, 6);
+      $n2 = rand(1, 6);
+      if(isset($_POST['boton'])) {
+          echo "{$n1} {$n2}";
+      }
+
+    ?>
+    <!--    ///////////////////////////          -->
+
+    <form method="post">
+        <input type="submit" name="boton" value=" Lanzar dados "/>
+    </form>
 </body>
 </html>
