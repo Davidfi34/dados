@@ -14,8 +14,11 @@
     
       $n1 = rand(1, 6);
       $n2 = rand(1, 6);
+      $suma =$n1 + $n2;
+    
       if(isset($_POST['boton'])) {
           echo "<h2> El resultado de tus dados es {$n1} y {$n2}</h2>";
+          echo "<h2>La suma total de los dados es {$suma}</h2>";
       }
 
     ?>
